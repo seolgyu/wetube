@@ -1,0 +1,12 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "cloning Youtube with Vanilla and NoedJS",
+  "author": "seol gyu",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "scripts":{
+    "start": "node index.js"
+  }
+}
