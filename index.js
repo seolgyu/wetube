@@ -7,4 +7,4 @@ function handleListening() {
     console.log(`Listening on: http://localhost:${PORT}`);
 }
 
-app.listen(PORT, handleListening); //4000 port를  listen해
+app.listen(PORT, handleListening); //4000 port를  listen
