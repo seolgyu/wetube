@@ -1,10 +1,12 @@
 //globalRouter
 export const home = (req, res) => res.render("home", {pageTitle: "Home" });
 
-export const search = (req, res) => {res.render
-    console.log(req.query);
-    ("Search", {pageTitle: "Serch" } );
-}
+export const search = (req, res) => {
+    const {
+        query: {term: searchingBy}
+    } = req; //const searchingBy = req.query.term 같은 code 이지만 사용 된 code는 ES6
+    res.render("Search", {pageTitle: "Serch", searchingBy } );
+}//searchingBy : searchingBy
 
 
 //videolRouter
