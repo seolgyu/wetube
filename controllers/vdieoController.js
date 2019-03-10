@@ -9,7 +9,7 @@ export const search = (req, res) => {
     const {
         query: {term: searchingBy}
     } = req; //const searchingBy = req.query.term 같은 code 이지만 사용 된 code는 ES6
-    res.render("Search", {pageTitle: "Serch", searchingBy } );
+    res.render("Search", {pageTitle: "Serch", searchingBy, videos } );
 }//searchingBy : searchingBy
 
 
