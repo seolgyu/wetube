@@ -5,11 +5,11 @@ cloning Youtube with Vanilla and NoedJS\
 ## pages:
 
 - [ ] Home
-- [ ] Join
-- [ ] Login
-- [x] search
+- [x] Join formpage
+- [x] Login formpage
+- [x] search formpage
 - [ ] User Detail
-- [ ] Edit Profile
+- [x] Edit Profile formpage
 - [ ] change Password
 - [ ] Upload
 - [ ] Video Detail
