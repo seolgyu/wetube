@@ -19,7 +19,11 @@ export const postjoin = (req,res) => {
     }
 };
 
-export const login = (req, res) => res.render("Login", {pageTitle: "login" });
+export const getLogin = (req, res) => 
+    res.render("Login", {pageTitle: "login" });
+export cosnt postLogin = (req, res) => {
+    res.redirect(routes.home);
+};
 export const logout = (req, res) => res.render("Logout", {pageTitle: "logout" });
 
 //userRouter
