@@ -1,4 +1,5 @@
-import {videos} from "../db"
+import {videos} from "../db";
+import routes from "../routes";
 
 //globalRouter
 export const home = (req, res) => {
@@ -14,7 +15,17 @@ export const search = (req, res) => {
 
 
 //videolRouter
-export const upload = (req, res) => res.render("Upload", {pageTitle: "Upload" } );
+export const getUpload = (req, res) => 
+    res.render("Upload", {pageTitle: "Upload" } );
+
+export const postUpload = (req, res) => {
+    const {
+        body: {file, title, description}
+    } = req;
+    // 할일 : 비디오 업로드 및 저장
+    res.redirect(routes.videoDetail(756521))
+};
+    
 
 export const videoDetail = (req, res) => res.render("VideoDetail", {pageTitle: "Video Detail" } );
 

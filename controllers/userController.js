@@ -21,10 +21,13 @@ export const postjoin = (req,res) => {
 
 export const getLogin = (req, res) => 
     res.render("Login", {pageTitle: "login" });
-export cosnt postLogin = (req, res) => {
+export const postLogin = (req, res) => {
     res.redirect(routes.home);
 };
-export const logout = (req, res) => res.render("Logout", {pageTitle: "logout" });
+export const logout = (req, res) => {
+    // 할일 : 로그아웃 처리
+    res.redirect(routes.home);
+};
 
 //userRouter
 export const userDetail = (req, res) => res.render("UserDetail", {pageTitle: "userDetail" });
