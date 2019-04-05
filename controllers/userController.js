@@ -33,4 +33,3 @@ export const logout = (req, res) => {
 export const userDetail = (req, res) => res.render("UserDetail", {pageTitle: "userDetail" });
 export const editProfile = (req, res) => res.render("editProfile", {pageTitle: "editProfile" });
 export const changePassword = (req, res) => res.render("ChangePassword", {pageTitle: "changePassword" });
-//시스템 미디어 융합 과제 Commit 다섯번쨰
